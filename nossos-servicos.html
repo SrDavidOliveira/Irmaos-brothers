@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
+  <title>Mario Bros</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="mascara-formulario" onclick="esconderForm()"></div>
+  <header class="header">
+    <img src="./imgs/mario.png" alt="logo mario">
+    <a href="./index.html">Home</a>
+    <a onclick="mostrarForm()">Fale Conosco</a>
+    <a href="./nossos-servicos.html">Nossos Serviços</a>
+  </header>
+
+  <div class="box-mae">
+    <div class="box-principal">
+      <img src="./imgs/logo.png" alt="logo mario bros" class="logo-mario">
+      <table class="table">
+        <tr>
+          <td>
+            <h2>Hidráulica residencial</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Encanador instalador predial</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Encanador industrial</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Bombeiro hidráulico</h2>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Soldador elétrico (como complementação)</h2>
+          </td>
+        </tr>
+      </table>
+      <button onclick="mostrarForm()">Entre em contato</button>
+    </div>
+
+    <div>
+      <img src="./imgs/irmaos.png" alt="logo mario e luigi" class="irmaos">
+    </div>
+  </div>
+
+  <div class="box-video">
+    <video src="./imgs/video.mp4" autoplay muted loop></video>
+    <div class="mascara"></div>
+    </video>
+  </div>
+
+  <a class="whatsapp" href="https://wa.me/5581985700225?text=Gostaria+de+fazer+um+or%C3%A7amento%21"><img
+      src="./imgs/whatsapp.png" /></a>
+
+  <form class="formulario-fale-conosco" action="https://formcarry.com/s/y4_yQaay4_m" method="POST"
+    enctype="multipart/form-data">
+    <input type="text" name="nome" placeholder="Seu Nome">
+    <input type="tel" name="telefone" placeholder="Seu Telefone">
+    <textarea placeholder="Digite seu problema aqui..." name="duvida"></textarea>
+    <button type="submit">Pedir orçamento</button>
+  </form>
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
